@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Devora Restaurant — fresh food, warm moments, and easy online ordering.">
+  <title>Devora Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Devora home">
+      <img src="assets/devora-logo.png" alt="Devora logo">
+    </a>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="cartOpen" aria-label="Open shopping cart">
+      <span>Cart</span><b id="cartCount">0</b>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">WELCOME TO DEVORA</span>
+          <h1>Good food.<br><em>Good moments.</em></h1>
+          <p>Fresh ingredients, beautiful plates, and a warm table made for sharing with the people you love.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Explore our menu</a>
+            <a class="btn btn-light" href="#contact">Find us</a>
+          </div>
+        </div>
+        <div class="hero-visual hero-visual-copy">
+          <div class="hero-glow-card">
+            <span class="eyebrow">THE DEVORA EXPERIENCE</span>
+            <strong>Fresh plates.<br>Warm service.<br>Beautiful moments.</strong>
+            <div class="hero-line"></div>
+            <small>Made fresh · Served with care</small>
+          </div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL TO DISCOVER <span>↓</span></div>
+    </section>
+
+    <section class="section popular">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CUSTOMER FAVORITES</span>
+          <h2>Most ordered</h2>
+        </div>
+        <a href="#menu" class="text-link">See full menu →</a>
+      </div>
+      <div class="food-grid" id="popularGrid"></div>
+    </section>
+
+    <section class="story story-background">
+      <div class="story-overlay"></div>
+      <div class="story-copy">
+        <span class="eyebrow">THE DEVORA TABLE</span>
+        <h2>Good food.<br><em>Good moments.</em></h2>
+        <p>At Devora, every plate is prepared to bring people together. From a quick lunch to a long dinner with family and friends, we care about the details that turn a meal into a memory.</p>
+        <a class="btn btn-primary" href="#menu">Discover the menu</a>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading centered">
+        <span class="eyebrow">OUR MENU</span>
+        <h2>Choose your favorite</h2>
+        <p>From satisfying meals to hot and cold drinks, there is something for every table.</p>
+      </div>
+
+      <div class="category-tabs" id="categoryTabs">
+        <button class="active" data-category="all">All</button>
+        <button data-category="food">Food</button>
+        <button data-category="hot">Hot Drinks</button>
+        <button data-category="cold">Cold Drinks</button>
+        <button data-category="dessert">Desserts</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="section-heading centered">
+        <span class="eyebrow">WHAT OUR GUESTS SAY</span>
+        <h2>Loved at the table</h2>
+      </div>
+      <div class="review-grid" id="reviewGrid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“The food was beautiful, fresh, and full of flavor. The atmosphere made the whole evening feel special.”</p>
+          <strong>— Maya R.</strong>
+        </article>
+        <article class="review-card featured">
+          <div class="stars">★★★★★</div>
+          <p>“Devora is now one of our favorite places for dinner. Great portions, lovely presentation, and very friendly service.”</p>
+          <strong>— Karim A.</strong>
+        </article>
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“Perfect for a family meal. Everything arrived fresh and the ordering process was super easy.”</p>
+          <strong>— Lina S.</strong>
+        </article>
+      </div>
+      <div class="review-action"><button class="btn btn-dark" id="addReviewBtn">＋ Add your review</button></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-image">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1400&q=90" alt="Restaurant table with food">
+      </div>
+      <div class="contact-copy">
+        <span class="eyebrow">COME SAY HELLO</span>
+        <h2>Your table is waiting.</h2>
+        <p>Visit us for a relaxed meal, a warm drink, or a night worth remembering.</p>
+        <div class="contact-details">
+          <div><span>📍</span><div><b>Location</b><small>Beirut, Lebanon</small></div></div>
+          <div><span>☎</span><div><b>Phone</b><small>+961 70 000 000</small></div></div>
+          <div><span>◷</span><div><b>Opening hours</b><small>Daily · 10:00 AM – 11:30 PM</small></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-brand">DEVORA</p>
+    <p>Good food. Good moments.</p>
+    <small>© 2026 Devora Restaurant. All rights reserved.</small>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <div><span class="eyebrow">YOUR ORDER</span><h3>Your cart</h3></div>
+      <button class="close-btn" id="cartClose">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">Your cart is empty.<br><a href="#menu">Explore the menu →</a></div>
+    </div>
+    <div class="cart-footer">
+      <div class="total-row"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-primary full" id="checkoutBtn" disabled>Continue to checkout</button>
+    </div>
+  </aside>
+
+  <!-- Review modal -->
+  <div class="modal-backdrop" id="reviewBackdrop">
+    <div class="checkout-modal review-modal">
+      <button class="close-btn modal-close" id="reviewClose">×</button>
+      <span class="eyebrow">SHARE YOUR EXPERIENCE</span>
+      <h2>Add a review.</h2>
+      <p class="muted">Tell future guests what you loved about Devora.</p>
+      <form id="reviewForm">
+        <label>Your name<input required name="name" placeholder="Your name"></label>
+        <label>Rating
+          <select required name="rating"><option value="5">★★★★★ — 5 stars</option><option value="4">★★★★☆ — 4 stars</option><option value="3">★★★☆☆ — 3 stars</option><option value="2">★★☆☆☆ — 2 stars</option><option value="1">★☆☆☆☆ — 1 star</option></select>
+        </label>
+        <label>Your review<textarea required name="text" rows="4" placeholder="What did you enjoy?"></textarea></label>
+        <button class="btn btn-primary full" type="submit">Publish review</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div class="modal-backdrop" id="checkoutBackdrop">
+    <div class="checkout-modal">
+      <button class="close-btn modal-close" id="checkoutClose">×</button>
+      <div id="checkoutFormWrap">
+        <span class="eyebrow">CHECKOUT</span>
+        <h2>Almost there.</h2>
+        <p class="muted">Enter your details and we’ll prepare your order.</p>
+        <form id="checkoutForm">
+          <div class="form-row">
+            <label>Full name<input required name="name" placeholder="Your name"></label>
+            <label>Phone number<input required name="phone" placeholder="+961 ..."></label>
+          </div>
+          <label>Delivery / pickup details
+            <textarea required name="address" rows="3" placeholder="Address or write “Pickup”"></textarea>
+          </label>
+          <label>Notes (optional)
+            <textarea name="notes" rows="2" placeholder="Anything we should know?"></textarea>
+          </label>
+          <div class="checkout-summary" id="checkoutSummary"></div>
+          <button class="btn btn-primary full" type="submit">Place order</button>
+        </form>
+      </div>
+      <div class="success-state hidden" id="successState">
+        <div class="success-icon">✓</div>
+        <span class="eyebrow">ORDER CONFIRMED</span>
+        <h2>Thank you!</h2>
+        <p>Your Devora order has been received. We’ll contact you shortly to confirm the details.</p>
+        <button class="btn btn-dark" id="doneBtn">Back to menu</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
